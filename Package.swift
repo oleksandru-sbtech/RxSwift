@@ -19,7 +19,7 @@ extension Target {
     #if os(Linux)
       return [.target(name: "RxCocoa", dependencies: ["RxSwift", "RxRelay"])]
     #else
-      return [.target(name: "RxCocoa", dependencies: ["RxSwift", "RxRelay", "RxCocoaRuntime"])]
+      return [.target(name: "RxCocoa", dependencies: ["RxSwift", "RxRelay"])]
     #endif
   }
 
