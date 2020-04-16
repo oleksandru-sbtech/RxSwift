@@ -9,9 +9,6 @@
 #if !os(Linux)
 
     import RxSwift
-    #if SWIFT_PACKAGE && !os(Linux)
-        import RxCocoaRuntime
-    #endif
 
     /// Base class for `DelegateProxyType` protocol.
     ///

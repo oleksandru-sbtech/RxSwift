@@ -10,9 +10,6 @@
 
 import Foundation.NSObject
 import RxSwift
-#if SWIFT_PACKAGE && !DISABLE_SWIZZLING && !os(Linux)
-    import RxCocoaRuntime
-#endif
 
 #if !DISABLE_SWIZZLING && !os(Linux)
 private var deallocatingSubjectTriggerContext: UInt8 = 0
